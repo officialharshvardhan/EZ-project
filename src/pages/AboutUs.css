@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
+
+.container{
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.circle{
+    position: relative;
+    top: 50px;
+    left:800px;
+    width: 700px;
+}
+.mountain{
+    padding-top: 100px;
+    position: relative;
+    top: 70px;
+    left: 200px;
+    width: 500px;
+}
+.sec1{
+    position: absolute;
+    top: 190px;
+    left: 60px;
+    text-align: center;
+    width: 600px;
+}
+.sec1 .heading{
+    font-family: 'Halant', serif;
+    font-size: 32px;
+    font-weight: 200;
+}
+.sec1 .text{
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin-top: 20px;
+}
+.sec2{
+    position: relative;
+    top: 50px;
+    left: 730px;
+    text-align: center;
+    width: 750px;
+}
+.sec2 p{
+    font-family: 'Island Moments', cursive;
+    font-size: 4rem;
+    font-weight: 400;
+
+}
+.sec3{
+    display: flex;
+    position: absolute;
+    top: 600px;
+    left: 100px;
+    width: 600px;
+}
+.card{
+    
+    background-image: url("../images/paper.png");
+      background-color: rgba(253, 203, 39, 0.4); /* orangish overlay */
+  background-blend-mode: multiply; /* blends color with image */
+  background-size: cover;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    height: 180px;
+    transform: rotate(10deg);
+}
+.card h1{
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 3.5rem;
+    color: rgb(31, 26, 61);
+    font-weight: 400;
+    margin-top: 10px;
+}
+.card p{
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #f97316;
+    font-weight: 300;
+    margin-top: -10px;
+}

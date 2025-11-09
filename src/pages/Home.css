@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 5rem 10%;
+  min-height: 60vh;
+  gap: 2rem;
+  flex-wrap: wrap; /* responsive */
+}
+
+/* LEFT SIDE */
+.hero-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-bg {
+  max-width: 550px;
+  width: 100%;
+  opacity: 1;
+  filter: brightness(1.2) saturate(1.3);
+  mix-blend-mode: multiply;
+  mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, transparent 100%);
+  filter: contrast(1.2) brightness(1.1) saturate(1.4);
+  transition: transform 0.6s ease;
+}
+
+.hero-bg:hover {
+  transform: scale(1.05);
+}
+
+.logo {
+  position: absolute;
+  height: 150px;
+}
+
+.logoimg {
+  height: 150px;
+  width: auto;
+  filter: contrast(1.2) brightness(1.1) saturate(1.4);
+}
+
+/* RIGHT SIDE */
+.hero-right {
+  flex: 1;
+  text-align: left;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-family: 'Island Moments', cursive;
+  font-style: italic;
+  font-size: 4.8rem;
+  text-align: center;
+  color: #1a2b3c;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.hero-subtitle {
+  font-family: halant, serif;
+  font-size: 3rem;
+  color: #e46a3a;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.hero-desc {
+  font-family: halant, serif;
+  font-size: 1.2rem;
+  text-align: center;
+
+  color: #333;
+  line-height: 1.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-right {
+    text-align: center;
+  }
+
+  .logo {
+    position: static;
+    margin-top: 1rem;
+  }
+}

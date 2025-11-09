@@ -1,38 +1,156 @@
-.App {
-  text-align: center;
+body {
+  background-color: #FFFFFF; /* base color */
+  background-image: url("images/BG.png");
+  background-repeat: repeat;  /* makes it tile seamlessly */
+  background-size: auto;      /* keeps texture sharp */
+  background-attachment: fixed; /* optional for a stable look */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* 🌍 NAVBAR STYLES */
+/* 🌐 NAVBAR STYLE */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 15px;
+  left: 0;
+  background: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-logo h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111827;
+}
+.logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+
+/* 🍔 Hamburger Toggle */
+.hamburger {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+  width: 30px;
+  height: 24px;
+  gap: 5px;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #111827;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+.hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+/* When menu open - transform to X */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* 📋 Navbar Menu */
+.navbar-menu {
+    position: absolute;
+    right: 85px;
+    width: 50%;
+    background: transparent;
+    padding: 10px 25px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.navbar-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-menu ul li a:hover {
+  color: #5b21b6;
+}
+
+/* 🟠 Let's Talk button */
+.talk-btn {
+  background-color: #f97316;
   color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.talk-btn:hover {
+  background-color: #ea580c;
 }
 
-@keyframes App-logo-spin {
+/* ✨ Fade animation */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(-10px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 12px 20px;
+  }
+
+  .navbar-menu {
+    top: 60px;
+    right: 10px;
+    width: 90%;
+  }
+
+  .navbar-menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .talk-btn {
+    width: 100%;
   }
 }

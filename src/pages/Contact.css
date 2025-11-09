@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
+
+.c-Container{
+     background-image: url('../images/bodimg.png'); /* Path to your image */
+  background-repeat: no-repeat;             /* Prevents repeating */
+  background-position: top right;           /* Places it at top-right */
+  background-attachment: fixed;             /* Keeps it fixed when scrolling (optional) */
+  background-size: 400px auto; 
+    padding-top: 100px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    
+}
+.c-text{
+    width: 500px;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 20px;
+    padding: 110px;
+}
+.head{
+    font-size: 36px;
+    font-family: 'Halant', serif;
+    text-align: center;
+}
+.para{
+    font-size:24px;
+    text-align: center;
+    font-family: 'Instrument Sans', sans-serif;
+}
+.form-area{
+    margin-top: 60px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.name{
+    font-size:12px;
+    width: 500px;
+    font-family: 'Instrument Sans', sans-serif;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0 0 1px #e5e3e2;
+  transition: box-shadow 0.3s ease, transform 0.1s ease;
+}
+.text-area{
+    font-size:12px;
+    width: 500px;
+    height: 70px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Instrument Sans', sans-serif;
+    box-shadow: 0 0 0 1px #e5e3e2;
+  transition: box-shadow 0.3s ease, transform 0.1s ease;
+}
+.btn{
+    background-color: orangered;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    width: 120px;
+    border: none;
+    margin-top: 10px;
+    color: aliceblue;
+    cursor: pointer;
+}
+.bodimg2{
+    position: absolute;
+    width: 400px;
+    left:0;
+    bottom: 0;
+}
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.status-message {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #444;
+}

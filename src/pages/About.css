@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+
+.text-style {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.text-style {
+  font-family: 'Halant', serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+}
+.note{
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    width: 580px;
+    filter: brightness(1) saturate(1);
+ 
+}
+.grouppic{
+    position: absolute;
+    top:270px;
+    left:750px;
+    width: 580px;
+    height: auto;
+    border-radius: 10px;
+}
+.gatepic{
+    position: absolute;
+    top: 490px;
+    left: 40px;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    filter: contrast(1.2) brightness(1.1) saturate(1.4);
+}
+.overlay-text{
+    position: absolute;
+    top:630px;
+    left: 700px;
+    text-align: center;
+}
+.overlay-text p{
+    font-family: 'Halant', serif;
+    font-size: 2.3rem;
+    font-weight: 200;
+}
+.logoj{
+    position: fixed;
+    left: 40px;
+    top:15px;
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    cursor: pointer;
+}
+.overlay-text button{
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 12px;
+    color: white;
+    border-radius: 20px;
+    background-color: #f97316;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(9, 9, 9, 0.1);
+}
+
+.vector1{
+    position: absolute;
+    top: 180px;
+    left: 880px;
+    width: 130px;
+    height: auto;
+}
+.vector2{
+    position: absolute;
+    top: 400px;
+    left: 560px;
+    width: 150px;
+    height: auto;
+}
+.vector3{
+    position: absolute;
+    top: 270px;
+    left: 1340px;
+    width: 100px;
+    height: auto;
+}
+.text1{
+    position: absolute;
+    top: 120px;
+    left: 840px;
+    font-family: 'Island Moments', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.text2{
+    position: absolute;
+    top: 570px;
+    left: 500px;
+    font-family: 'Island Moments', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.text3{
+    position: absolute;
+    top: 200px;
+    left: 1370px;
+    font-family: 'Island Moments', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+}

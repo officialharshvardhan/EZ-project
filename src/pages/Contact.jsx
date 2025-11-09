@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import bodimg from "../images/bodimg.png";
 import bodimg2 from "../images/bodimg2.png";
 import "./Contact.css";
 

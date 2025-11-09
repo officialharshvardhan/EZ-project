@@ -9,6 +9,7 @@ import Services from './pages/Services';
 import About from './pages/About';
 import Home from './pages/Home';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Portfolio from './pages/Portfolio';
 function App() {
   return (
       <Router>
@@ -26,6 +27,7 @@ function App() {
               <Route path="/services/filmProduction" element={<FilmProduction />} />
           <Route path="/services/branding" element={<Branding />} />
           <Route path="/services/art" element={<Art/>} />
+          <Route path="/portfolio" element={<Portfolio/>} />
             </Routes>
         </div>
       </Router>

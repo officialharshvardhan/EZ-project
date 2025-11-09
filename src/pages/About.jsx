@@ -7,7 +7,13 @@ import vector1 from "../images/Vector.png";
 import vector2 from "../images/Vector2.png";
 import vector3 from "../images/Vector3.png";
 import "./About.css";
+
+import { useNavigate } from "react-router-dom";
 const About = () => {
+    const navigate = useNavigate();
+        const handelclick = () => {
+        navigate("/portfolio");
+      };
     return (
         <div>
             <div className="images">
@@ -16,7 +22,7 @@ const About = () => {
                 <img src={gateway} alt="India Gate" className="gatepic" />
                 <div className="overlay-text">
                     <p>Take a closer look at the stories V bring to life.</p>
-                    <button>View Portfolio</button>
+                    <button onClick={handelclick}>View Portfolio</button>
                 </div>
                 <img src={logo} className="logoj" alt="" />
                 <img src={vector1} alt="" className="vector1" />
